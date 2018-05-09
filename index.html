@@ -6,16 +6,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Home</title>
+    <!-- Title LOGO -->
+    <link rel="icon" type="image/x-icon" href="img/logo/logo-black.ico">
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    <!-- shop-item.css -->
     <link href="css/shop-item.css" rel="stylesheet">
-    <!-- my-css -->
+    <!-- my-css.css -->
     <link href="css/my-css.css" rel="stylesheet">
-    <!-- Icon Custom -->
+    <!-- icon -->
     <link href="icon/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="bg-light">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -36,13 +38,13 @@
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="product-list.html" id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="pages/product-list.html" id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Category
               </a>
               <div class="dropdown-menu" aria-labelledby="dropmenu">
-                <a class="dropdown-item" href="#">Laptop Workstation</a>
-                <a class="dropdown-item" href="#">Laptop Gaming</a>
-                <a class="dropdown-item" href="#">Accesories</a>
+                <a class="dropdown-item" href="pages/product-list.html/">Laptop Workstation</a>
+                <a class="dropdown-item" href="pages/product-list.html">Laptop Gaming</a>
+                <a class="dropdown-item" href="pages/product-list.html">Accesories</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -60,15 +62,14 @@
             <li class="nav-item">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search">
-                    <div class="input-group-apprend">
-                      <button class="btn bt-primary"><i class="fas fa-search"></i></button>
-                      
+                    <div class="input-group-append">
+                      <button class="btn btn-primary"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
             </li>
             <li class="nav-item">
                 <a class="btn btn-primary" href="" data-toggle="modal" data-target="#form-login"><i class="fas fa-user"></i></a>
-                <a class="btn btn-primary" href="shopping-cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <a class="btn btn-primary" href="pages/shopping-cart.html"><i class="fas fa-shopping-cart"></i></a>
             </li>
           </ul>
         </div>
@@ -100,45 +101,39 @@
                       <a href=""><small class="text-muted">Forgot password?</small></a>
                       <button class="btn btn-outline-primary d-block mb-3">Log In</button>
                       <span><small class="text-muted">Or Sign In</small></span>
-                      <button class="btn btn-primary d-block">Sign In</button>
+                      <a class="btn btn-primary" href="pages/sign-in.html">Sign In</a>
                   </form>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Main Content -->
-        <div id="my-id-top"></div>
-        <div class="row bg-dark text-white">
-            <h3 class="mx-auto">Home</h3>
-          </div>
-        <!-- Carousel Home -->
-        <div class="row">
-          <div id="carousel-home" class="carousel slide w-100 mx-auto my-carousel" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-lg-6"><a href="product-list.html"><img class="w-100" src="img/carousel/carousel-01.jpg" alt="First slide"></a></div>
-                  <div class="col-lg-6"><a href="product-list.html"><img class="w-100" src="img/carousel/carousel-01.jpg" alt="First slide"></a></div>
-                </div>
-                
-              </div>
-              <div class="carousel-item">
-                <a href="product-list.html"><img class="d-block w-100" src="img/carousel/carousel-02.jpg" alt="Second slide"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="product-list.html"><img class="d-block w-100" src="img/carousel/carousel-03.jpg" alt="Third slide"></a>
-              </div>
+      </div>
+      <!-- Main Content -->
+      <div id="my-id-top"></div>
+        
+      <!-- Carousel Home -->
+      <div class="row">
+        <div id="carousel-home" class="carousel slide w-100 mx-auto" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="pages/product-list.html"><img class="w-100" src="img/carousel-home/carousel-fit-1.jpg" alt="First slide"></a>
             </div>
-            <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+            <div class="carousel-item">
+              <a href="pages/product-list.html"><img class="d-block w-100" src="img/carousel-home/carousel-fit-2.jpg" alt="Second slide"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="pages/product-list.html"><img class="d-block w-100" src="img/carousel-home/carousel-fit-3.jpg" alt="Third slide"></a>
+            </div>
           </div>
+          <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
+      </div>
       
       <!--Featured Product Content -->
       <div class="row bg-dark text-white">
@@ -147,163 +142,251 @@
       <div class="row">
         <!-- One card -->
         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-          <div class="card mb-3">
-            <a href="product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
-            <div class="card-body">
-              <a href="product-detail.html"><h5 class="card-title">Lorem Ipsum</h5></a>
-              <p class="card-text">Price: 30,000,000vnd</p>
-              <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque similique incidunt porro asperiores aperiam, officia delectus quos dolorum id voluptate quisquam rem quas nemo. Eos molestiae velit quae assumenda esse! </p>
-              <a href="product-detail.html" class="text-muted d-block"><small><span class="oi oi-eye my-icon"></span> Read more</small></a>
-              <a href="" class="btn btn-primary"><span class="oi oi-cart my-icon"></span> Add to Cart</a>
+            <div class="card mb-3 my-card--shadow">
+              <a href="pages/product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
+              <div class="card-body">
+                <a href="pages/product-detail.html"><h5 class="card-title">Product name</h5></a>
+                <p class="card-text">30,000,000 <span class="badge">vnd</span></p>
+                <p class="card-text">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </p>
+                <p class="card-text">
+                  <span class="badge badge-light">Screen 15'</span>
+                  <span class="badge badge-light">CPU Core i7</span>
+                  <span class="badge badge-light">RAM 8GB</span>
+                  <span class="badge badge-light">SSD 128GB</span>
+                  <span class="badge badge-light">Intel HD 6000</span>
+                </p>
+                <div class="row justify-content-around">
+                    <a href="pages/product-detail.html" class="text-muted d-block"><small><i class="far fa-eye"></i></span> Read more</small></a>
+                    <a href="" class="btn btn-sm btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
         <!-- ./One Card -->
         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-          <div class="card mb-3">
-            <a href="product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
+          <div class="card mb-3 my-card--shadow">
+            <a href="pages/product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
             <div class="card-body">
-              <a href="product-detail.html"><h5 class="card-title">Lorem Ipsum</h5></a>
-              <p class="card-text">Price: 30,000,000vnd</p>
-              <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque similique incidunt porro asperiores aperiam, officia delectus quos dolorum id voluptate quisquam rem quas nemo. Eos molestiae velit quae assumenda esse! </p>
-              <a href="product-detail.html" class="text-muted d-block"><small><span class="oi oi-eye my-icon"></span> Read more</small></a>
-              <a href="" class="btn btn-primary"><span class="oi oi-cart my-icon"></span> Add to Cart</a>
+              <a href="pages/product-detail.html"><h5 class="card-title">Product name</h5></a>
+              <p class="card-text">30,000,000 <span class="badge">vnd</span></p>
+              <p class="card-text">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+              </p>
+              <p class="card-text">
+                <span class="badge badge-light">Screen 15'</span>
+                <span class="badge badge-light">CPU Core i7</span>
+                <span class="badge badge-light">RAM 8GB</span>
+                <span class="badge badge-light">SSD 128GB</span>
+                <span class="badge badge-light">Intel HD 6000</span>
+              </p>
+              <div class="row justify-content-around">
+                  <a href="pages/product-detail.html" class="text-muted d-block"><small><i class="far fa-eye"></i></span> Read more</small></a>
+                  <a href="" class="btn btn-sm btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-          <div class="card mb-3">
-            <a href="product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
+          <div class="card mb-3 my-card--shadow">
+            <a href="pages/product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
             <div class="card-body">
-              <a href="product-detail.html"><h5 class="card-title">Lorem Ipsum</h5></a>
-              <p class="card-text">Price: 30,000,000vnd</p>
-              <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque similique incidunt porro asperiores aperiam, officia delectus quos dolorum id voluptate quisquam rem quas nemo. Eos molestiae velit quae assumenda esse! </p>
-              <a href="product-detail.html" class="text-muted d-block"><small><span class="oi oi-eye my-icon"></span> Read more</small></a>
-              <a href="" class="btn btn-primary"><span class="oi oi-cart my-icon"></span> Add to Cart</a>
+              <a href="pages/product-detail.html"><h5 class="card-title">Product name</h5></a>
+              <p class="card-text">30,000,000 <span class="badge">vnd</span></p>
+              <p class="card-text">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+              </p>
+              <p class="card-text">
+                <span class="badge badge-light">Screen 15'</span>
+                <span class="badge badge-light">CPU Core i7</span>
+                <span class="badge badge-light">RAM 8GB</span>
+                <span class="badge badge-light">SSD 128GB</span>
+                <span class="badge badge-light">Intel HD 6000</span>
+              </p>
+              <div class="row justify-content-around">
+                  <a href="pages/product-detail.html" class="text-muted d-block"><small><i class="far fa-eye"></i></span> Read more</small></a>
+                  <a href="" class="btn btn-sm btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-          <div class="card mb-3">
-            <a href="product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
+          <div class="card mb-3 my-card--shadow">
+            <a href="pages/product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
             <div class="card-body">
-              <a href="product-detail.html"><h5 class="card-title">Lorem Ipsum</h5></a>
-              <p class="card-text">Price: 30,000,000vnd</p>
-              <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque similique incidunt porro asperiores aperiam, officia delectus quos dolorum id voluptate quisquam rem quas nemo. Eos molestiae velit quae assumenda esse! </p>
-              <a href="product-detail.html" class="text-muted d-block"><small><span class="oi oi-eye my-icon"></span> Read more</small></a>
-              <a href="" class="btn btn-primary"><span class="oi oi-cart my-icon"></span> Add to Cart</a>
+              <a href="pages/product-detail.html"><h5 class="card-title">Product name</h5></a>
+              <p class="card-text">30,000,000 <span class="badge">vnd</span></p>
+              <p class="card-text">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+              </p>
+              <p class="card-text">
+                <span class="badge badge-light">Screen 15'</span>
+                <span class="badge badge-light">CPU Core i7</span>
+                <span class="badge badge-light">RAM 8GB</span>
+                <span class="badge badge-light">SSD 128GB</span>
+                <span class="badge badge-light">Intel HD 6000</span>
+              </p>
+              <div class="row justify-content-around">
+                  <a href="pages/product-detail.html" class="text-muted d-block"><small><i class="far fa-eye"></i></span> Read more</small></a>
+                  <a href="" class="btn btn-sm btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-          <div class="card mb-3">
-            <a href="product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
+          <div class="card mb-3 my-card--shadow">
+            <a href="pages/product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
             <div class="card-body">
-              <a href="product-detail.html"><h5 class="card-title">Lorem Ipsum</h5></a>
-              <p class="card-text">Price: 30,000,000vnd</p>
-              <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque similique incidunt porro asperiores aperiam, officia delectus quos dolorum id voluptate quisquam rem quas nemo. Eos molestiae velit quae assumenda esse! </p>
-              <a href="product-detail.html" class="text-muted d-block"><small><span class="oi oi-eye my-icon"></span> Read more</small></a>
-              <a href="" class="btn btn-primary"><span class="oi oi-cart my-icon"></span> Add to Cart</a>
+              <a href="pages/product-detail.html"><h5 class="card-title">Product name</h5></a>
+              <p class="card-text">30,000,000 <span class="badge">vnd</span></p>
+              <p class="card-text">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+              </p>
+              <p class="card-text">
+                <span class="badge badge-light">Screen 15'</span>
+                <span class="badge badge-light">CPU Core i7</span>
+                <span class="badge badge-light">RAM 8GB</span>
+                <span class="badge badge-light">SSD 128GB</span>
+                <span class="badge badge-light">Intel HD 6000</span>
+              </p>
+              <div class="row justify-content-around">
+                  <a href="pages/product-detail.html" class="text-muted d-block"><small><i class="far fa-eye"></i></span> Read more</small></a>
+                  <a href="" class="btn btn-sm btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-          <div class="card mb-3">
-            <a href="product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
+          <div class="card mb-3 my-card--shadow">
+            <a href="pages/product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
             <div class="card-body">
-              <a href="product-detail.html"><h5 class="card-title">Lorem Ipsum</h5></a>
-              <p class="card-text">Price: 30,000,000vnd</p>
-              <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque similique incidunt porro asperiores aperiam, officia delectus quos dolorum id voluptate quisquam rem quas nemo. Eos molestiae velit quae assumenda esse! </p>
-              <a href="product-detail.html" class="text-muted d-block"><small><span class="oi oi-eye my-icon"></span> Read more</small></a>
-              <a href="" class="btn btn-primary"><span class="oi oi-cart my-icon"></span> Add to Cart</a>
+              <a href="pages/product-detail.html"><h5 class="card-title">Product name</h5></a>
+              <p class="card-text">30,000,000 <span class="badge">vnd</span></p>
+              <p class="card-text">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+              </p>
+              <p class="card-text">
+                <span class="badge badge-light">Screen 15'</span>
+                <span class="badge badge-light">CPU Core i7</span>
+                <span class="badge badge-light">RAM 8GB</span>
+                <span class="badge badge-light">SSD 128GB</span>
+                <span class="badge badge-light">Intel HD 6000</span>
+              </p>
+              <div class="row justify-content-around">
+                  <a href="pages/product-detail.html" class="text-muted d-block"><small><i class="far fa-eye"></i></span> Read more</small></a>
+                  <a href="" class="btn btn-sm btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-          <div class="card mb-3">
-            <a href="product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
+          <div class="card mb-3 my-card--shadow">
+            <a href="pages/product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
             <div class="card-body">
-              <a href="product-detail.html"><h5 class="card-title">Lorem Ipsum</h5></a>
-              <p class="card-text">Price: 30,000,000vnd</p>
-              <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque similique incidunt porro asperiores aperiam, officia delectus quos dolorum id voluptate quisquam rem quas nemo. Eos molestiae velit quae assumenda esse! </p>
-              <a href="product-detail.html" class="text-muted d-block"><small><span class="oi oi-eye my-icon"></span> Read more</small></a>
-              <a href="" class="btn btn-primary"><span class="oi oi-cart my-icon"></span> Add to Cart</a>
+              <a href="pages/product-detail.html"><h5 class="card-title">Product name</h5></a>
+              <p class="card-text">30,000,000 <span class="badge">vnd</span></p>
+              <p class="card-text">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+              </p>
+              <p class="card-text">
+                <span class="badge badge-light">Screen 15'</span>
+                <span class="badge badge-light">CPU Core i7</span>
+                <span class="badge badge-light">RAM 8GB</span>
+                <span class="badge badge-light">SSD 128GB</span>
+                <span class="badge badge-light">Intel HD 6000</span>
+              </p>
+              <div class="row justify-content-around">
+                  <a href="pages/product-detail.html" class="text-muted d-block"><small><i class="far fa-eye"></i></span> Read more</small></a>
+                  <a href="" class="btn btn-sm btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-          <div class="card mb-3">
-            <a href="product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
-            <div class="card-body">
-              <a href="product-detail.html"><h5 class="card-title">Lorem Ipsum</h5></a>
-              <p class="card-text">Price: 30,000,000vnd</p>
-              <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque similique incidunt porro asperiores aperiam, officia delectus quos dolorum id voluptate quisquam rem quas nemo. Eos molestiae velit quae assumenda esse! </p>
-              <a href="product-detail.html" class="text-muted d-block"><small><span class="oi oi-eye my-icon"></span> Read more</small></a>
-              <a href="" class="btn btn-primary"><span class="oi oi-cart my-icon"></span> Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-          <div class="card mb-3">
-            <a href="product-detail.html"><img class="card-img-top" src="img/carousel/carousel-01.jpg" alt="Card image cap"></a>
-            <div class="card-body">
-              <a href="product-detail.html"><h5 class="card-title">Lorem Ipsum</h5></a>
-              <p class="card-text">Price: 30,000,000vnd</p>
-              <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque similique incidunt porro asperiores aperiam, officia delectus quos dolorum id voluptate quisquam rem quas nemo. Eos molestiae velit quae assumenda esse! </p>
-              <a href="product-detail.html" class="text-muted d-block"><small><span class="oi oi-eye my-icon"></span> Read more</small></a>
-              <a href="" class="btn btn-primary"><span class="oi oi-cart my-icon"></span> Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        
-
       </div>
       
 
     </div>
-    <!-- /.container -->
-    <!-- Jump Top -->
-    <div class="row">
-      <div class="col-lg-9 col-md-9 col-sm-6 col-12"></div>
-      <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-right">
-        <a href="#my-id-top" class="text-muted">
-          <small>Jump to Top <i class="fas fa-arrow-up"></i></small>
-        </a>
+    <!-- Subscribe -->
+    <div class="container text-justify">
+      <div class="row">
+        <div class="col-lg-4 col-md-3 col-12"></div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <hr>
+          <h5 class="text-center ">SUBSCRIBE TO OUR NEWSLETTER</h5>
+          <hr>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci numquam autem aliquid eveniet fugiat perspiciatis vitae qui repellat accusantium.</p>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Email">
+            <button class="btn btn-primary">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-3 col-12"></div>
       </div>
     </div>
-    <!-- Footer -->
-    <footer class="bg-dark">
-      <div class="container-fluid">
-        <div class="container">
-            <div class="row text-white">
-                <div class="col-lg-4 col-md-6 col-sm-12 text-left">
-                  <h6 class="text-center">CONTACT</h6>
-                  <span class="d-block">012 6936 569</span>
-                  <a class="d-block" href="index.html">www.kiotdigital.com</a>
-                  <a class="d-block" href="">faceook.com/kiotdigital</a>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <h6 class="text-center">ADDRESS</h6>
-                  <p>1234 Street, Ward 1, District 1, Ho Chi Minh city.</p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <h6 class="text-center">SUBSCRIBE via</h6>
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Email">
-                    <button class="btn btn-primary">Subscribe</button>
-                  </div>
-                </div>
-            </div>
+    <!-- Footer Main -->
+    <div>
+      <!-- Jump Top -->
+      <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-6 col-12"></div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-right">
+          <a href="#my-id-top" class="text-muted">
+            <small>Jump to Top <i class="fas fa-arrow-up"></i></small>
+          </a>
         </div>
-        <p class="m-0 text-center text-white"><a href="index.html"><span class="text-muted">&copy; 2018 Kiot Digital</span></a></p>
       </div>
-      <!-- /.container -->
-    </footer>
+      <!-- Footer Content -->
+      <footer class="container-fluid bg-dark my-footer--background">
+        <div class="container">
+          <h5 class="text-white text-center">KIOT DIGITAL</h5>
+          <div class="row text-white justify-content-center">
+            <div class="text-center">
+                <span class="d-block"><i class="fas fa-map-marker"></i> 1234 Street, Ward 1, District 1, Ho Chi Minh city.</span>
+                <span class="d-block"><i class="fas fa-mobile-alt"></i>  012 6936 569</span>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <a href="" class="btn my-btn--round my-link--white"><i class="fas fa-globe"></i></a>
+            <a href="" class="btn my-btn--round my-link--white"><i class="fab fa-facebook"></i></a>
+          </div>
+          <p class="m-0 text-center text-white"><a href="../index.html"><span class="text-muted">&copy; 2018 Kiot Digital</span></a></p>
+        </div>
+      </footer>
+    </div>
 
-    <!-- Bootstrap core JavaScript -->
+    <!--JQuery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Boostrap 4 JS -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- my-script -->
+    <!-- my-script JS-->
     <script src="js/script.js"></script>
     
   </body>
